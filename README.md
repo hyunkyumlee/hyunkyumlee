@@ -20,7 +20,7 @@ Java/Spring 기반 백엔드 개발자를 목표로 학습하고 프로젝트를
 
 [![Email](https://img.shields.io/badge/Email-hg102938363736%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hg102938363736@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-hyunkyumlee-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/hyunkyumlee)
-[![Portfolio](https://hyunkyumlee.github.io/Frontend_Portfolio_HyunKyumLee/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Frontend_Project-0EA5E9?style=for-the-badge&logo=html5&logoColor=white)](https://hyunkyumlee.github.io/Frontend_Portfolio_HyunKyumLee/)
 
 </div>
 
