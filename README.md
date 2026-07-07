@@ -14,6 +14,8 @@ Java/Spring 기반 백엔드 개발자를 목표로 학습하고 프로젝트를
 - 요구사항 분석, 데이터 흐름 이해, 서비스 계층 분리, 팀 프로젝트 리딩 경험을 강점으로 가져가고 있습니다.
 - 에이콘아카데미 Java 백엔드 개발자 양성 과정에서 AWS, Docker, Kubernetes, GitHub Actions까지 함께 다루고 있습니다.
 
+[![이력서](https://img.shields.io/badge/-%EC%9D%B4%EB%A0%A5%EC%84%9C-2563EB?style=for-the-badge&logo=html5&logoColor=white)](https://hyunkyumlee.github.io/hyunkyumlee/resume.html)
+
 ## Contact
 
 <div>
@@ -21,7 +23,6 @@ Java/Spring 기반 백엔드 개발자를 목표로 학습하고 프로젝트를
 [![Email](https://img.shields.io/badge/Email-hg102938363736%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hg102938363736@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-hyunkyumlee-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/hyunkyumlee)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Frontend_Project-0EA5E9?style=for-the-badge&logo=html5&logoColor=white)](https://hyunkyumlee.github.io/Frontend_Portfolio_HyunKyumLee/)
-[![Resume](https://img.shields.io/badge/Resume-HTML_File-2563EB?style=for-the-badge&logo=html5&logoColor=white)](https://github.com/hyunkyumlee/hyunkyumlee/blob/main/resume.html)
 
 </div>
 
