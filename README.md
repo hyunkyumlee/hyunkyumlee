@@ -1,14 +1,14 @@
 <div align="center">
 
-![Welcome Banner](https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0f172a,55:2563eb,100:16a34a&text=Lee%20Hyeon%20Gyeom&fontColor=ffffff&fontSize=44&fontAlign=50&fontAlignY=38&desc=Java%20%2F%20Spring%20Backend%20Developer&descAlign=50&descAlignY=58&descSize=18)
+![Welcome Banner](https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0f172a,55:2563eb,100:16a34a&text=Lee%20Hyeon%20Gyeom&fontColor=ffffff&fontSize=44&fontAlign=50&fontAlignY=38&desc=Java%20%2F%20Spring%20Web%20Developer&descAlign=50&descAlignY=58&descSize=18)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Noto+Sans+KR&weight=600&size=24&duration=2600&pause=900&color=2563EB&center=true&vCenter=true&width=760&lines=Backend+Developer;Java+%2F+Spring+%2F+Database;Build+reliable+service+flows)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Noto+Sans+KR&weight=600&size=24&duration=2600&pause=900&color=2563EB&center=true&vCenter=true&width=760&lines=Web+Developer;Java+%2F+Spring+%2F+Database;Build+reliable+service+flows)](https://git.io/typing-svg)
 
 </div>
 
 ## About
 
-Java/Spring 기반 백엔드 개발자를 목표로 학습하고 프로젝트를 쌓고 있는 이현겸입니다.
+Java/Spring 기반 웹 개발자를 목표로 학습하고 프로젝트를 쌓고 있는 이현겸입니다.
 
 - Java, Spring, JSP/Servlet, Database 중심의 웹 애플리케이션 개발을 학습 중입니다.
 - 요구사항 분석, 데이터 흐름 이해, 서비스 계층 분리, 팀 프로젝트 리딩 경험을 강점으로 가져가고 있습니다.
