@@ -89,6 +89,6 @@ Java/Spring 기반 백엔드 개발자를 목표로 학습하고 프로젝트를
 |---|---|---|
 | [Managym](https://github.com/hyunkyumlee/managym) | Flutter, Firebase | 졸업작품 운동 앱. 팀장으로 PT 등록, 코칭, 채팅 등 운동 서비스 흐름을 구성했습니다. |
 | [StudyLog](https://github.com/SEUIL/acorncampus_studyLog) | Java, Servlet/JSP, Oracle, OpenAI API | 학습 기록 블로그 플랫폼. 댓글, 좋아요/싫어요, 신고 AJAX 흐름을 담당했습니다. |
-| [Acorn E-Learning](https://github.com/hyunkyumlee/Acorn-E-Learning) | Java, Spring, MySQL | 에이콘 E-학습터 최종 프로젝트 레포지토리입니다. |
+| [Acorn E-Learning](https://github.com/hyunkyumlee/Acorn-E-Learning) | Java, Spring, MySQL | 에이콘 E-학습터 최종 프로젝트 레포지토리입니다. 팀장으로 기획, 설계, 구현, 배포 등 프로젝트 전반과 팀원들의 업무 분담을 담당했습니다.|
 | [OOSASD](https://github.com/hyunkyumlee/OOSASD) | Java, UML, SRS/SDS | 엘리베이터형 자판기 시스템 요구사항 분석 및 객체지향 설계 문서화 프로젝트입니다. |
 | [Frontend Portfolio](https://github.com/hyunkyumlee/Frontend_Portfolio_HyunKyumLee) | HTML, CSS, JavaScript | 개인 웹 프론트엔드 포트폴리오 프로젝트입니다. |
