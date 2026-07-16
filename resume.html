@@ -213,6 +213,21 @@
       text-align: center;
     }
 
+    @media screen and (max-width: 480px) {
+      .resume-prose li {
+        word-break: keep-all;
+      }
+
+      .resume-prose a {
+        overflow-wrap: anywhere;
+        word-break: break-all;
+      }
+
+      .resume-prose .nowrap {
+        white-space: nowrap;
+      }
+    }
+
     @media print {
       :root {
         --font-size-title: 22px;
@@ -239,12 +254,6 @@
       a {
         color: var(--color-text);
         text-decoration: none;
-      }
-
-      a[href]::after {
-        content: " (" attr(href) ")";
-        color: var(--color-muted);
-        font-size: var(--font-size-small);
       }
 
       header,
@@ -310,6 +319,26 @@
 
       <section aria-labelledby="projects-heading">
         <h2 id="projects-heading">프로젝트</h2>
+        <article class="resume-prose">
+          <h3>Knowva - E 학습터 플랫폼</h3>
+          <p class="meta"><time datetime="2026-06">2026.06</time> ~ 진행 중 · 에이콘아카데미 · 팀장 · Spring Boot, Thymeleaf, MyBatis, MySQL</p>
+          <ul>
+            <li>학습 로드맵, 레벨 테스트, 이론·문제 학습, <span class="nowrap">AI 코딩 테스트 및 분석</span>, 커뮤니티, 결제·Premium 기능을 갖춘 프로그래밍 학습 플랫폼을 팀으로 개발하고 있습니다.</li>
+            <li>공통 구현부와 <span class="nowrap">AI를 활용한 코딩 테스트 및 분석</span> 기능을 담당하고, 프로젝트 명세와 DDL·샘플 데이터를 최신화했습니다.</li>
+            <li>팀장으로 프로젝트 일정과 GitHub PR을 관리하며, GitHub Actions, Docker, AWS를 활용한 배포를 담당했습니다.</li>
+          </ul>
+        </article>
+
+        <article class="resume-prose">
+          <h3>StudyLog - 나만의 학습 기록 블로그 플랫폼</h3>
+          <p class="meta"><time datetime="2026-05">2026.05</time> · 에이콘아카데미 · Java 17, Servlet/JSP, Oracle, JDBC</p>
+          <ul>
+            <li>Markdown 기반 학습 기록을 작성하고 태그·시리즈로 정리하며 커뮤니티 상호작용을 지원하는 블로그 플랫폼을 개발했습니다.</li>
+            <li>댓글 목록을 부모-자식 트리 구조로 조립하고 AJAX 기반 댓글·대댓글 작성, 수정, 삭제 흐름을 구현했습니다.</li>
+            <li>게시글·댓글 반응 상태 전환과 중복 신고 방지, 관리자 신고 처리 흐름을 구현하며 서비스 계층·컨트롤러·JSP 화면의 책임을 분리했습니다.</li>
+          </ul>
+        </article>
+
         <article>
           <h3>졸업작품 운동 앱</h3>
           <p class="meta"><time datetime="2024-12">2024.12</time> ~ <time datetime="2025-11">2025.11</time> · 부천대학교 · 팀장 · Flutter, Firebase</p>
@@ -387,7 +416,8 @@
           <p class="meta">기반 다지기</p>
           <p>학교생활 중 가장 기억에 남는 과목은 객체지향시스템분석및설계였습니다. 이 수업에서는 팀장과 팀원 역할을 오가며 시스템 설계와 문서화를 반복적으로 수행했습니다. 요구사항 분석부터 구현, 테스트까지의 과정을 문서로 체계적으로 정리하는 능력을 기를 수 있었고, UML을 활용한 다이어그램 작성 및 적용 방법도 배웠습니다.</p>
           <p>과정은 힘들고 많은 노력이 필요했지만 끝까지 포기하지 않고 참여하여 A+ 성적을 받을 수 있었고, 이 경험을 통해 어려운 문제도 꾸준히 몰입하면 성과를 낼 수 있다는 자신감을 얻었습니다.</p>
-          <p>대학 졸업 후에는 희망하는 백엔드 직무에 대한 전문성을 높이기 위해 에이콘아카데미 자바 백엔드 개발자 양성 과정을 수료하게 되었습니다. 웹 풀스택 개발의 기초를 다졌으며 CI/CD 파이프라인 구축, 리액트   등 실무에서 쓰이는 다양한 기술들을 익혔습니다.</p>
+          <p>대학 졸업 후에는 희망하는 백엔드 직무에 대한 전문성을 높이기 위해 에이콘아카데미 자바 백엔드 개발자 양성 과정을 수료하게 되었습니다. 웹 풀스택 개발의 기초를 다졌으며 CI/CD 파이프라인 구축 및 실무에서 쓰이는 다양한 기술들을 익혔습니다.</p>
+          <p>마지막 프로젝트에서는 수강생들의 추천으로 팀장 직위를 수행하게 되었으며, 프로젝트 전반을 관리하고 배포를 책임졌습니다. 그 동안의 프로젝트 경험을 녹여 체계적으로 작업하였고, 팀원들이 헷갈릴 수 있는 부분은 모두 기준을 잡아두어 흔들리지 않게 하였습니다.</p>
           <p>이러한 기초 지식과 많은 프로젝트 경험은 백엔드 개발 직무에서 체계적이고 신뢰성 있는 시스템을 구축하는 밑거름이 될 것이라 생각합니다.</p>
         </article>
 
@@ -401,7 +431,7 @@
 
         <article>
           <h3>입사 후 포부</h3>
-          <p class="meta">소제목</p>
+          <p class="meta">회사에 도움이 되는 인재</p>
           <p>입사 후에는 맡은 분야를 완전히 통달할 수 있을 정도로 몰입하며 전문성을 쌓고 싶습니다. 특히 백엔드 직무는 안정적인 시스템 구축과 지속적인 개선이 필요한 영역이므로, 성실히 학습하고 경험을 축적하여 회사의 성장에 기여하겠습니다.</p>
           <p>또한 저는 적응된 환경에서 최고의 성과를 내는 강점을 가지고 있기에 ○○기업의 조직 문화 속에서 오랫동안 근무하며 회사와 함께 성장할 수 있다고 확신합니다. 앞으로 백엔드 개발자로서 책임감을 가지고 안정적이고 신뢰할 수 있는 서비스를 구현하겠습니다.</p>
         </article>
@@ -412,7 +442,7 @@
         <article>
           <h3>StudyLog - 나만의 학습 기록 블로그 플랫폼</h3>
           <ul class="fact-list">
-            <li><span class="label">GitHub</span>: <a href="https://github.com/SEUIL/acorncampus_studyLog">https://github.com/SEUIL/acorncampus_studyLog</a></li>
+            <li><span class="label">GitHub</span>: <a href="https://github.com/SEUIL/acorncampus_studyLog" target="_blank" rel="noopener noreferrer">https://github.com/SEUIL/acorncampus_studyLog</a></li>
             <li><span class="label">Stack</span>: Java 17, Java EE 8 Servlet/JSP, Maven, Oracle 19c, JDBC, PreparedStatement, JSP/JSTL, Vanilla JS, Session 인증, BCrypt, OpenAI API</li>
             <li><span class="label">문제 / 목표</span>: Markdown 기반 학습 기록을 작성하고 태그/시리즈로 정리하며 커뮤니티 상호작용을 지원하는 블로그 플랫폼입니다.</li>
             <li><span class="label">담당 영역</span>: 담당 영역은 댓글 / 좋아요 / 신고이며, 담당 영역 중심으로 댓글 트리 구조, 게시글·댓글 좋아요/싫어요, 신고 접수 AJAX 흐름, 게시글 상세·작성 화면 JSP 연결을 다뤘습니다.</li>
@@ -431,6 +461,20 @@
               <figcaption>신고 및 관리</figcaption>
             </figure>
           </div>
+        </article>
+
+        <article class="resume-prose">
+          <h3>Knowva - E 학습터 플랫폼</h3>
+          <ul class="fact-list">
+            <li><span class="label">GitHub</span>: <a href="https://github.com/hyunkyumlee/Acorn-E-Learning" target="_blank" rel="noopener noreferrer">https://github.com/hyunkyumlee/Acorn-E-Learning</a></li>
+            <li><span class="label">진행 상태</span>: <time datetime="2026-06">2026.06</time>부터 진행 중인 에이콘아카데미 팀 프로젝트입니다.</li>
+            <li><span class="label">Stack</span>: Java 17, Spring Boot 4, Spring MVC, Thymeleaf, MyBatis, MySQL, HTML/CSS/JavaScript, GitHub Actions, Docker, AWS</li>
+            <li><span class="label">문제 / 목표</span>: Java, CSS, 알고리즘 학습을 짧은 mission과 roadmap으로 나누고, 학습 기록을 바탕으로 다음 학습 순서를 안내하는 프로그래밍 학습 플랫폼입니다.</li>
+            <li><span class="label">주요 기능</span>: 학습 로드맵, 레벨 테스트, 이론·문제 학습, <span class="nowrap">AI 코딩 테스트 및 분석</span>, 커뮤니티, 결제·Premium 기능을 구성했습니다.</li>
+            <li><span class="label">담당 영역</span>: 팀장으로 프로젝트 일정과 GitHub PR을 관리하고, 공통 구현부와 <span class="nowrap">AI를 활용한 코딩 테스트 및 분석</span> 기능을 담당했습니다.</li>
+            <li><span class="label">배포</span>: GitHub Actions, Docker, AWS를 활용해 배포 환경을 구성하고 배포를 담당했습니다.</li>
+            <li><span class="label">개선 사항</span>: 커뮤니티 인기글·배지 로직을 구현하고 AI 코딩 테스트에서 에디터 정답 노출과 중복 생성 문제를 개선했습니다.</li>
+          </ul>
         </article>
       </section>
     </main>
