@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>이현겸 백엔드 개발자 이력서</title>
+  <style>
+    :root {
+      --color-text: #1f2933;
+      --color-muted: #52606d;
+      --color-border: #d9e2ec;
+      --color-accent: #2f5d62;
+      --color-surface: #ffffff;
+      --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      --font-size-title: 25px;
+      --font-size-heading: 15px;
+      --font-size-subheading: 13px;
+      --font-size-body: 11px;
+      --font-size-small: 10px;
+      --line-height-body: 1.52;
+      --space-1: 4px;
+      --space-2: 8px;
+      --space-3: 12px;
+      --space-4: 16px;
+      --space-5: 20px;
+      --space-6: 24px;
+      --border-width: 1px;
+    }
+
+    @page {
+      size: A4;
+      margin: 14mm;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--color-text);
+      background: var(--color-surface);
+      font-family: var(--font-family-base);
+      font-size: var(--font-size-body);
+      line-height: var(--line-height-body);
+    }
+
+    .resume {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: var(--space-6) var(--space-5);
+    }
+
+    header {
+      border-bottom: var(--border-width) solid var(--color-border);
+      padding-bottom: var(--space-4);
+      margin-bottom: var(--space-5);
+    }
+
+    .header-content {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: var(--space-4);
+    }
+
+    .header-text {
+      min-width: 0;
+    }
+
+    .photo-placeholder {
+      display: flex;
+      flex: 0 0 calc(var(--space-5) * 4);
+      align-items: center;
+      justify-content: center;
+      width: calc(var(--space-5) * 4);
+      height: calc(var(--space-5) * 5);
+      border: var(--border-width) solid var(--color-border);
+      color: var(--color-muted);
+      font-size: var(--font-size-small);
+      font-weight: 700;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    ul {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: var(--space-1);
+      font-size: var(--font-size-title);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    .role {
+      margin-bottom: var(--space-3);
+      color: var(--color-accent);
+      font-size: var(--font-size-heading);
+      font-weight: 700;
+    }
+
+    .contact-list,
+    .skill-list,
+    .fact-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .contact-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-2) var(--space-4);
+      margin-bottom: 0;
+      color: var(--color-muted);
+    }
+
+    a {
+      color: var(--color-text);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    section {
+      margin-bottom: var(--space-5);
+    }
+
+    h2 {
+      margin-bottom: var(--space-3);
+      padding-bottom: var(--space-1);
+      border-bottom: var(--border-width) solid var(--color-border);
+      color: var(--color-accent);
+      font-size: var(--font-size-heading);
+      line-height: 1.3;
+    }
+
+    h3 {
+      margin-bottom: var(--space-1);
+      font-size: var(--font-size-subheading);
+      line-height: 1.35;
+    }
+
+    p {
+      margin-bottom: var(--space-2);
+    }
+
+    ul {
+      margin-bottom: 0;
+      padding-left: var(--space-4);
+    }
+
+    li {
+      margin-bottom: var(--space-1);
+    }
+
+    article {
+      margin-bottom: var(--space-4);
+      break-inside: avoid;
+    }
+
+    article:last-child,
+    section:last-child {
+      margin-bottom: 0;
+    }
+
+    .meta {
+      margin-bottom: var(--space-2);
+      color: var(--color-muted);
+      font-size: var(--font-size-small);
+      font-weight: 600;
+    }
+
+    .placeholder {
+      padding: 0 2px;
+      border-bottom: 1px dashed var(--color-muted);
+      color: var(--color-accent);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .skill-list li,
+    .fact-list li {
+      margin-bottom: var(--space-2);
+    }
+
+    .label {
+      color: var(--color-text);
+      font-weight: 700;
+    }
+
+    .portfolio-gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-4);
+      margin-top: var(--space-3);
+    }
+
+    .portfolio-gallery figure {
+      margin: 0;
+      padding: var(--space-3);
+      border: var(--border-width) solid var(--color-border);
+      break-inside: avoid;
+    }
+
+    .portfolio-gallery img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: var(--border-width) solid var(--color-border);
+    }
+
+    .portfolio-gallery figcaption {
+      margin-top: var(--space-2);
+      color: var(--color-muted);
+      font-size: var(--font-size-body);
+      font-weight: 600;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 480px) {
+      .resume-prose li,
+      section[aria-labelledby="self-introduction-heading"] .resume-prose p {
+        word-break: keep-all;
+      }
+
+      .resume-prose a {
+        overflow-wrap: anywhere;
+        word-break: break-all;
+      }
+
+      .resume-prose .nowrap {
+        white-space: nowrap;
+      }
+    }
+
+    @media print {
+      :root {
+        --font-size-title: 22px;
+        --font-size-heading: 13px;
+        --font-size-subheading: 11px;
+        --font-size-body: 9.5px;
+        --font-size-small: 8.5px;
+        --space-5: 14px;
+        --space-6: 0;
+      }
+
+      body {
+        color: var(--color-text);
+        background: var(--color-surface);
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .resume {
+        max-width: none;
+        padding: 0;
+      }
+
+      a {
+        color: var(--color-text);
+        text-decoration: none;
+      }
+
+      header,
+      section,
+      article {
+        break-inside: avoid;
+      }
+
+      .portfolio-gallery {
+        grid-template-columns: 1fr;
+        gap: var(--space-2);
+      }
+
+      .portfolio-gallery figure {
+        padding: var(--space-1);
+      }
+
+      .portfolio-gallery img {
+        max-height: 42mm;
+        object-fit: contain;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <header>
+      <div class="header-content">
+        <div class="header-text">
+          <h1>이현겸 / Lee Hyeon Gyeom</h1>
+          <p class="role">백엔드 개발자</p>
+          <ul class="contact-list" aria-label="연락처">
+            <li><span class="label">Email</span>: <a href="mailto:hg102938363736@gmail.com">hg102938363736@gmail.com</a></li>
+            <li><span class="label">GitHub</span>: <a href="https://github.com/hyunkyumlee">https://github.com/hyunkyumlee</a></li>
+            <li><span class="label">Phone</span>: </li>
+          </ul>
+        </div>
+        <div class="photo-placeholder" aria-hidden="true">사진</div>
+      </div>
+    </header>
+
+    <main>
+      <section aria-labelledby="summary-heading">
+        <h2 id="summary-heading">핵심 요약</h2>
+        <ul>
+          <li>Java/Spring과 MySQL/Oracle 기반 웹 애플리케이션 개발을 준비해 온 백엔드 개발자 입니다.</li>
+          <li>에이콘아카데미 자바 백엔드 개발자 양성 과정에서 Java, JDBC, JSP/Servlet, Spring, Spring Data JPA, MyBatis, Thymeleaf, Git/GitHub, AWS, Docker, Kubernetes를 학습하고 있습니다.</li>
+          <li>졸업작품 운동 앱 팀장, 객체지향 설계 문서화, C#/Oracle/MySQL 기반 DB 연동 프로젝트 경험을 통해 요구사항 분석, 데이터 흐름 이해, 팀 프로젝트 수행 역량을 쌓았습니다.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="skills-heading">
+        <h2 id="skills-heading">기술 역량</h2>
+        <ul class="skill-list">
+          <li><span class="label">Backend</span>: Java, Spring, JDBC, JSP/Servlet, Spring Data JPA, MyBatis, Thymeleaf</li>
+          <li><span class="label">Frontend</span>: HTML/CSS/JavaScript, React, jQuery</li>
+          <li><span class="label">Database</span>: MySQL, Oracle, SQL</li>
+          <li><span class="label">DevOps/Cloud</span>: Git/GitHub, Linux, AWS EC2/RDS/S3/IAM, Docker, Docker Compose, Kubernetes, GitHub Actions</li>
+          <li><span class="label">Mobile/App</span>: Flutter, Firebase</li>
+          <li><span class="label">Additional</span>: Python, AI Agent 하네스</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="projects-heading">
+        <h2 id="projects-heading">프로젝트</h2>
+        <article class="resume-prose">
+          <h3>Knowva - E 학습터 플랫폼</h3>
+          <p class="meta"><time datetime="2026-06">2026.06</time> ~ 진행 중 · 에이콘아카데미 · 팀장 · Spring Boot, Thymeleaf, MyBatis, MySQL</p>
+          <ul>
+            <li>학습 로드맵, 레벨 테스트, 이론·문제 학습, <span class="nowrap">AI 코딩 테스트 및 분석</span>, 커뮤니티, 결제·Premium 기능을 갖춘 프로그래밍 학습 플랫폼을 팀으로 개발하고 있습니다.</li>
+            <li>공통 구현부와 <span class="nowrap">AI를 활용한 코딩 테스트 및 분석</span> 기능을 담당하고, 프로젝트 명세와 DDL·샘플 데이터를 최신화했습니다.</li>
+            <li>팀장으로 프로젝트 일정과 GitHub PR을 관리하며, GitHub Actions, Docker, AWS를 활용한 배포를 담당했습니다.</li>
+          </ul>
+        </article>
+
+        <article class="resume-prose">
+          <h3>StudyLog - 나만의 학습 기록 블로그 플랫폼</h3>
+          <p class="meta"><time datetime="2026-05">2026.05</time> · 에이콘아카데미 · Java 17, Servlet/JSP, Oracle, JDBC</p>
+          <ul>
+            <li>Markdown 기반 학습 기록을 작성하고 태그·시리즈로 정리하며 커뮤니티 상호작용을 지원하는 블로그 플랫폼을 개발했습니다.</li>
+            <li>댓글 목록을 부모-자식 트리 구조로 조립하고 AJAX 기반 댓글·대댓글 작성, 수정, 삭제 흐름을 구현했습니다.</li>
+            <li>게시글·댓글 반응 상태 전환과 중복 신고 방지, 관리자 신고 처리 흐름을 구현하며 서비스 계층·컨트롤러·JSP 화면의 책임을 분리했습니다.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>졸업작품 운동 앱</h3>
+          <p class="meta"><time datetime="2024-12">2024.12</time> ~ <time datetime="2025-11">2025.11</time> · 부천대학교 · 팀장 · Flutter, Firebase</p>
+          <ul>
+            <li>사용자, 온라인 트레이너, 헬스장 트레이너, 점주로 구분되는 계정 유형을 기반으로 운동 서비스 앱을 구성했습니다.</li>
+            <li>PT 등록, 온라인 코칭 프로그램 구매, 영상통화 코칭, 채팅 기능을 포함한 앱 개발을 진행했습니다.</li>
+            <li>팀장으로 프로젝트 방향과 역할 분담을 관리했으며, 부천대학교 졸업작품 최우수상을 수상했습니다.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>객체지향시스템분석및설계 엘리베이터형 자판기 시스템</h3>
+          <p class="meta"><time datetime="2025-03">2025.03</time> ~ <time datetime="2025-06">2025.06</time> · 부천대학교 · Java, 요구사항명세서, BM, RM, SRS, AM, SDS</p>
+          <ul>
+            <li>엘리베이터형 자판기 시스템을 대상으로 객체지향 관점의 요구사항 분석과 설계를 수행했습니다.</li>
+            <li>요구사항명세서, BM, RM, SRS, AM, SDS 등 1,000페이지 이상의 설계 문서를 작성했습니다.</li>
+            <li>요구사항을 구조화하고 객체 간 책임을 구분하는 과정을 통해 A+ 성적을 받았습니다.</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>C# 우산 관리 프로젝트</h3>
+          <p class="meta"><time datetime="2024-09">2024.09</time> ~ <time datetime="2024-12">2024.12</time> · 부천대학교 · C#, Oracle, MySQL</p>
+          <ul>
+            <li>우산 대여, 반납, 포인트 적립, 연체 반납 시 연체금 징수 또는 포인트 차감 기능을 구현했습니다.</li>
+            <li>응용 프로그램과 Oracle/MySQL 데이터베이스를 연동하며 DB 기반 기능 구현 경험을 쌓았습니다.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section aria-labelledby="academic-heading">
+        <h2 id="academic-heading">학력</h2>
+        <ul class="fact-list">
+          <li><span class="label">부천대학교 컴퓨터소프트웨어과</span> · <time datetime="2021-03">2021.03</time> ~ <time datetime="2026-02">2026.02</time> · 졸업</li>
+          <li><span class="label">범박고등학교 이과</span> · <time datetime="2018-03">2018.03</time> ~ <time datetime="2021-02">2021.02</time> · 졸업</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="training-heading">
+        <h2 id="training-heading">교육이수</h2>
+        <ul class="fact-list">
+          <li><span class="label">에이콘아카데미 자바 백엔드 개발자 양성 과정</span> · <time datetime="2026-01-22">2026.01.22</time> ~ <time datetime="2026-07-29">2026.07.29</time> · 이수 중</li>
+          <li><span class="label">부천대학교 정보처리산업기사 필기 강의</span> · <time datetime="2025-07-07">2025.07.07</time> ~ <time datetime="2025-07-11">2025.07.11</time></li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="awards-heading">
+        <h2 id="awards-heading">수상내역</h2>
+        <ul class="fact-list">
+          <li><span class="label">부천대학교 졸업작품 최우수상</span> · <time datetime="2025-11-19">2025.11.19</time></li>
+          <li><span class="label">3학년 1학기 성적 최우수</span> · 부천대학교</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="certifications-heading">
+        <h2 id="certifications-heading">자격 및 기타</h2>
+        <ul class="fact-list">
+          <li><span class="label">정보처리산업기사(필기)</span> · 한국산업인력공단 · <time datetime="2025-08-22">2025.08.22</time></li>
+          <li><span class="label">운전면허 1종보통</span> · <time datetime="2021-06-04">2021.06.04</time></li>
+          <li><span class="label">병역</span>: 육군 영상감시병 · <time datetime="2022-10">2022.10</time> ~ <time datetime="2024-04">2024.04</time></li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="self-introduction-heading">
+        <h2 id="self-introduction-heading">자기소개서</h2>
+        <article class="resume-prose">
+          <h3>지원동기</h3>
+          <p class="meta">왜 이 회사이며, 왜 이 직무인지</p>
+          <p>제가 <span class="placeholder">[회사명]</span>의 <span class="placeholder">[지원 직무]</span>에 지원한 이유는 <span class="placeholder">[관심 도메인]</span>에 관심을 갖게 되었기 때문입니다. <span class="placeholder">[접하게 된 계기]</span>와 <span class="placeholder">[인상 깊었던 점]</span>을 구체적으로 작성합니다.</p>
+          <p>대학에서 여러 프로젝트를 수행하고 에이콘아카데미 자바 백엔드 과정에서 <span class="placeholder">[대표 프로젝트]</span>를 개발하며 <span class="placeholder">[연결 경험]</span>을 쌓았습니다.</p>
+          <p>이 경험을 바탕으로 <span class="placeholder">[회사명]</span>의 <span class="placeholder">[팀/서비스]</span>에서 <span class="placeholder">[기여 방향]</span>을 실현하고 싶습니다.</p>
+        </article>
+
+        <article class="resume-prose">
+          <h3>업무관련 역량</h3>
+          <p class="meta">설계부터 배포까지, 손으로 익힌 백엔드</p>
+          <p>객체지향시스템분석및설계 과목에서 요구사항 분석부터 구현과 테스트까지 전 과정을 UML 기반으로 문서화하며 시스템을 구조적으로 바라보는 기초를 다졌고, A+ 성적으로 마무리했습니다. 졸업작품 <span class="placeholder">[졸업작품명]</span>에서는 <span class="placeholder">[맡은 역할]</span>과 <span class="placeholder">[구현 내용]</span>을 수행해 최우수상을 수상했습니다.</p>
+          <p>이후 백엔드 전문성을 높이기 위해 에이콘아카데미 자바 백엔드 개발자 양성 과정을 수료했습니다. 이 과정에서 <span class="placeholder">[주요 기술]</span>을 학습했고, <span class="placeholder">[CI/CD 도구]</span>를 활용한 배포 파이프라인 구축을 경험했습니다.</p>
+          <p>팀 프로젝트 <span class="placeholder">[프로젝트명]</span>에서는 <span class="placeholder">[서비스 설명]</span>을 개발하며 <span class="placeholder">[핵심 기능]</span>을 담당했습니다. 개발 중 <span class="placeholder">[기술 문제]</span>가 발생했을 때 <span class="placeholder">[원인 분석]</span>과 <span class="placeholder">[해결 방법]</span>으로 대응해 <span class="placeholder">[결과/수치]</span>를 만들었습니다.</p>
+        </article>
+
+        <article class="resume-prose">
+          <h3>성격 및 장단점</h3>
+          <p class="meta">사람들을 연결하는</p>
+          <p>훈련소에서 소대장 훈련병으로 최우수 표창을 받은 경험을 시작으로, 대학과 에이콘아카데미의 팀 프로젝트에서 여러 차례 팀장을 맡았습니다. 특히 <span class="placeholder">[프로젝트명]</span>에서는 팀원들이 혼란을 겪지 않도록 <span class="placeholder">[기준 1]</span>과 <span class="placeholder">[기준 2]</span>를 프로젝트 초기에 정했습니다.</p>
+          <p>그 결과 <span class="placeholder">[구체적 효과]</span>를 만들 수 있었습니다. 팀원으로 참여할 때에도 팀장의 의도를 먼저 이해하고 제가 기여할 수 있는 역할을 찾기 위해 소통하며, 리더와 구성원 모두의 관점에서 협업하려고 합니다.</p>
+          <p>한편 문제를 깊이 파고들다 다른 업무의 우선순위를 놓칠 수 있다는 점을 보완하고 있습니다. <span class="placeholder">[관리 방법]</span>을 적용해 <span class="placeholder">[개선 사례]</span>를 만들었습니다.</p>
+        </article>
+
+        <article class="resume-prose">
+          <h3>입사 후 포부</h3>
+          <p class="meta">회사에 도움이 되는 인재</p>
+          <p>입사 후에는 <span class="placeholder">[회사명]</span>의 <span class="placeholder">[서비스/시스템]</span> 코드베이스와 운영 환경을 깊이 이해하는 데 집중하겠습니다. 백엔드는 안정성이 곧 신뢰이므로 <span class="placeholder">[초기 실천 1]</span>과 <span class="placeholder">[초기 실천 2]</span>를 통해 팀에 기여하겠습니다.</p>
+          <p>중기적으로는 <span class="placeholder">[중기 목표]</span>를 목표로 성장하겠습니다. 환경이 바뀌어도 변하지 않는 성실함을 바탕으로, 안정적이고 신뢰할 수 있는 서비스를 만드는 개발자로 <span class="placeholder">[회사명]</span>과 오래 함께하겠습니다.</p>
+        </article>
+      </section>
+
+      <section aria-labelledby="portfolio-heading">
+        <h2 id="portfolio-heading">포트폴리오</h2>
+        <article>
+          <h3>StudyLog - 나만의 학습 기록 블로그 플랫폼</h3>
+          <ul class="fact-list">
+            <li><span class="label">GitHub</span>: <a href="https://github.com/SEUIL/acorncampus_studyLog" target="_blank" rel="noopener noreferrer">https://github.com/SEUIL/acorncampus_studyLog</a></li>
+            <li><span class="label">Stack</span>: Java 17, Java EE 8 Servlet/JSP, Maven, Oracle 19c, JDBC, PreparedStatement, JSP/JSTL, Vanilla JS, Session 인증, BCrypt, OpenAI API</li>
+            <li><span class="label">문제 / 목표</span>: Markdown 기반 학습 기록을 작성하고 태그/시리즈로 정리하며 커뮤니티 상호작용을 지원하는 블로그 플랫폼입니다.</li>
+            <li><span class="label">담당 영역</span>: 담당 영역은 댓글 / 좋아요 / 신고이며, 담당 영역 중심으로 댓글 트리 구조, 게시글·댓글 좋아요/싫어요, 신고 접수 AJAX 흐름, 게시글 상세·작성 화면 JSP 연결을 다뤘습니다.</li>
+            <li><span class="label">댓글</span>: CommentService에서 flat 댓글 목록을 부모-자식 트리 구조로 조립하고, CommentController에서 <code>/l_check/comment/*</code> AJAX 요청으로 댓글/대댓글 작성, 수정, 삭제를 처리했습니다.</li>
+            <li><span class="label">좋아요</span>: LikeService에서 동일 반응 재클릭 취소, 다른 반응 변경, 최초 클릭 등록 상태 머신을 구성하고, LikeController에서 게시글/댓글 좋아요 count와 사용자 반응 상태를 JSON으로 반환했습니다.</li>
+            <li><span class="label">신고 및 관리</span>: ReportService에서 게시글/댓글 중복 신고 방지, 신고 접수, 관리자 신고 목록/처리 흐름을 구성하고, ReportController에서 <code>/l_check/report/*</code> AJAX 요청으로 게시글/댓글 신고를 접수했습니다.</li>
+            <li><span class="label">결과 / 배운 점</span>: 게시글 상세 화면에서 댓글, 반응, 신고가 비동기 흐름으로 연결되는 구조를 구현하며 Servlet/JSP 환경에서 서비스 계층, 컨트롤러, JSP 화면 연결 책임을 분리하는 경험을 쌓았습니다.</li>
+          </ul>
+          <div class="portfolio-gallery" aria-label="StudyLog 프로젝트 화면 예시">
+            <figure>
+              <img src="../assets/studylog-comments.png" alt="StudyLog 학습 기록 블로그 플랫폼 AJAX 추천 및 댓글 시스템 스크린샷">
+              <figcaption>AJAX 추천 및 댓글 시스템</figcaption>
+            </figure>
+            <figure>
+              <img src="../assets/studylog-report.png" alt="StudyLog 학습 기록 블로그 플랫폼 주요 기능 Features 스크린샷">
+              <figcaption>신고 및 관리</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="resume-prose">
+          <h3>Knowva - E 학습터 플랫폼</h3>
+          <ul class="fact-list">
+            <li><span class="label">GitHub</span>: <a href="https://github.com/hyunkyumlee/Acorn-E-Learning" target="_blank" rel="noopener noreferrer">https://github.com/hyunkyumlee/Acorn-E-Learning</a></li>
+            <li><span class="label">진행 상태</span>: <time datetime="2026-06">2026.06</time>부터 진행 중인 에이콘아카데미 팀 프로젝트입니다.</li>
+            <li><span class="label">Stack</span>: Java 17, Spring Boot 4, Spring MVC, Thymeleaf, MyBatis, MySQL, HTML/CSS/JavaScript, GitHub Actions, Docker, AWS</li>
+            <li><span class="label">문제 / 목표</span>: Java, CSS, 알고리즘 학습을 짧은 mission과 roadmap으로 나누고, 학습 기록을 바탕으로 다음 학습 순서를 안내하는 프로그래밍 학습 플랫폼입니다.</li>
+            <li><span class="label">주요 기능</span>: 학습 로드맵, 레벨 테스트, 이론·문제 학습, <span class="nowrap">AI 코딩 테스트 및 분석</span>, 커뮤니티, 결제·Premium 기능을 구성했습니다.</li>
+            <li><span class="label">담당 영역</span>: 팀장으로 프로젝트 일정과 GitHub PR을 관리하고, 공통 구현부와 <span class="nowrap">AI를 활용한 코딩 테스트 및 분석</span> 기능을 담당했습니다.</li>
+            <li><span class="label">배포</span>: GitHub Actions, Docker, AWS를 활용해 배포 환경을 구성하고 배포를 담당했습니다.</li>
+            <li><span class="label">개선 사항</span>: 커뮤니티 인기글·배지 로직을 구현하고 AI 코딩 테스트에서 에디터 정답 노출과 중복 생성 문제를 개선했습니다.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
